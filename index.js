@@ -1557,6 +1557,7 @@ function initializeModules(bot, mcData, defaultMove) {
           try {
             const yaw = Math.random() * Math.PI * 2;
             bot.look(yaw, 0, true);
+            bot.setControlState("sneak", true);
             bot.setControlState("forward", true);
             setTimeout(
               () => {
