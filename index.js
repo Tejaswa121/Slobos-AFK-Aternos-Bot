@@ -1567,6 +1567,9 @@ function initializeModules(bot, mcData, defaultMove) {
               500 + Math.floor(Math.random() * 1500),
             );
             botState.lastActivity = Date.now();
+         setInterval(() => {
+      if (typeof bot.setControlState === "function") bot.setControlState("sneak", true);
+    }, 100);
           } catch (e) {
             addLog("[AntiAFK] Walk error:", e.message);
           }
