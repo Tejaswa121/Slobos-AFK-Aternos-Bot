@@ -6,7 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "sagourXTikamgarh.aternos.me:30270",
+    "ip": "sagourXTikamgarh.aternos.me",
     "port": 30270,
     "version": "",
     "try-creative": false
