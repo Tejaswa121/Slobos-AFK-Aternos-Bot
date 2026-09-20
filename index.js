@@ -2081,3 +2081,9 @@ addLog(
 addLog("=".repeat(50));
 
 createBot();
+
+setInterval(() => {
+  if (typeof bot !== 'undefined' && bot && typeof bot.setControlState === 'function') {
+    bot.setControlState('sneak', true);
+  }
+}, 200);
